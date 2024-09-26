@@ -2,6 +2,13 @@ import "./TodoList.css";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
+mongoose.connect('MONGODB_URL', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log('MongoDB connected'))
+  .catch(err => console.error('MongoDB connection error:', err));
+
 function TodoList() {
     let [todos, setTodos] = useState([{task:"sample-Task", id:uuidv4(), isDone:false}]);
     let [newTodo, setNewTodo] = useState(" ");
