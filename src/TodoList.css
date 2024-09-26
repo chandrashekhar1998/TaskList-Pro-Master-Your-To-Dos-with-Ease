@@ -1,0 +1,95 @@
+/* Styles for the TodoList container */
+div {
+    max-width: 600px;
+    margin: 15px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+    background-color: #ffffff; 
+}
+
+/* Styles for the input box */
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    margin-bottom: 10px;
+    background-color: #f0f0f0; 
+    color: #333;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+    margin-bottom: 20px; 
+}
+
+/* Styles for the buttons */
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff; 
+}
+
+.task-button {
+    color: #fff;
+    background-color: blue;
+}
+
+.delete-button {
+    color: #fff;
+    background-color: red;
+}
+
+.mark-as-done {
+    color: #fff;
+    background-color: green;
+}
+
+.mark-all-done {
+    color: #fff;
+    background-color: green;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    opacity: 0.9;
+}
+
+/* Styles for the task list */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Styles for each task item */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9; 
+    color: #333; 
+}
+
+/* Styles for task text */
+li span {
+    font-size: 16px;
+}
+
+/* Styles for completed tasks */
+.completed-task {
+    color: #999; 
+    font-weight: bold; 
+}
